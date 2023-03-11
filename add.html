@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <section>
+        <form action="/" method="post">
+            <input type="text" placeholder="language ..." name="language">
+            <textarea name="problem" cols="30" rows="5" placeholder="problem ..."></textarea>
+            <textarea name="reciveText" cols="30" rows="30" placeholder="solution"></textarea>
+            <select  name="type">
+                <option value="0">type</option>
+                <option value="1">bug</option>
+                <option value="2">feture</option>
+            </select>
+            <input type="date" name="date">
+
+            <button type="submit">send</button>
+        </form>
+    </section>
+
+    <style>
+        *{
+            box-shadow: none;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+        }
+
+        body * {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        body input , select {
+            height: 50px;
+            outline: none;
+        }
+
+        textarea{
+            outline: none;
+        }
+
+        section {
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+section {
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0 1rem 0;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #c3c3c3;
+    text-align: center;
+    outline: none;
+}
+
+
+
+
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    height: auto;
+}
+
+th {
+    border-bottom: 1px solid #a1a1a1;
+}
+
+td {
+    border-bottom: 1px solid #c3c3c3;
+    font-size: 20px;
+}
+
+
+th:first-child {
+    width: 3%;
+    height: 50px;
+}
+
+th:nth-child(2) {
+    width: 7%;
+    height: 50px;
+}
+
+th:nth-child(3) {
+    height: 50px;
+    width: 7%;
+}
+
+th:last-child {
+
+    height: 50px;
+    width: 8%;
+}
