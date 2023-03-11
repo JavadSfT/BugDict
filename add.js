@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 app.get('/', (req, res) => {
-    res.sendFile("E:/GitHub/JMyBug.github.io/add.html")
+    res.sendFile("E:/GitHub/JavadBugDict.github.io/add.html")
 })
 
 app.post("/", function (req, res) {
@@ -23,4 +23,4 @@ app.post("/", function (req, res) {
     res.end("new row set")
 });
 
-app.listen(8080)
+app.listen(1010)
