@@ -15,6 +15,7 @@
   "homepage": "https://github.com/JavadSfT/JavadBugDict.github.io#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.4"
   }
 }
