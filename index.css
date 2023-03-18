@@ -27,10 +27,6 @@ input {
     outline: none;
 }
 
-
-
-
-
 table {
     width: 90%;
     margin: 0 auto;
@@ -68,4 +64,25 @@ th:last-child {
 
     height: 50px;
     width: 8%;
+}
+
+@media screen and (max-width : 750px) {
+    th:first-child {
+        width: 3%;
+    }
+    
+    th:nth-child(2) {
+        width: 15%;
+    }
+    
+    th:nth-child(3) {
+        width: 15%;
+    }
+    
+    th:last-child {
+        display: none;
+    }
+    td:last-child{
+        display: none;
+    }
 }

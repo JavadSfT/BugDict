@@ -7,14 +7,13 @@ fetch('./repo/BugDict.json')
     })
     .then(item => {
 
-        console.log(item);
+   
         for (let i = 0; i < item.length; i++) {
-            console.log(item[i].language);
 
             let tr = document.createElement('tr')
-            
+
             let td1 = document.createElement('td')
-            td1.innerHTML = i+1
+            td1.innerHTML = i + 1
             tr.appendChild(td1)
 
             let td2 = document.createElement('td')
@@ -22,21 +21,22 @@ fetch('./repo/BugDict.json')
             tr.appendChild(td2)
 
             let td3 = document.createElement('td')
-            switch (item[i].type){
-                case 1 :
+            switch (item[i].type) {
+                case 1:
                     td3.innerHTML = "bug"
                     break
-                case 2 :
+                case 2:
                     td3.innerHTML = "feture"
             }
             tr.appendChild(td3)
 
             let td4 = document.createElement('td')
-            td4.innerHTML = item[i].problem
-            // let a = document.createElement('a')
-            // a.innerHTML = item[i].problem
-            // a.href = i
-            // td4.appendChild(a)
+            let a = document.createElement('a')
+            a.innerHTML = item[i].problem
+
+            a.href = `problem/index.html?problem=${i+1}`
+
+            td4.appendChild(a)
             tr.appendChild(td4)
 
             let td5 = document.createElement('td')

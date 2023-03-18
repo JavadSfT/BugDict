@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+body {
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 60%;
+    min-height: 50vh;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+nav:first-child {
+    height: 10vh;
+    width: 100%;
+}
+
+nav:last-child {
+    height: 40vh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border: 1px solid #a1a1a1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav:last-child div{
+    max-width: 85%;
+    margin: 15px 50px;
+}
+
+
+nav:first-child article:nth-child(1),
+nav:first-child article:nth-child(3) {
+    width: 24%;
+    border-bottom: none;
+}
+
+nav:first-child article:nth-child(1) p {
+    display: block;
+    border: 1px solid #a1a1a1;
+    border-bottom: none;
+    height: 38pt;
+    padding: 12px 0 0 0;
+    font-size: 18px;
+}
+span {
+    width: 100%;
+}
+
+nav:first-child article:nth-child(2) {
+    width: 52%;
+    border: 1px solid #a1a1a1;
+    border-right: none;
+    border-left: none;
+}
+
+nav:first-child article:nth-child(3){
+    border: 1px solid #a1a1a1;
+    border-bottom: none;
+}
+
+
+nav:first-child article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width : 750px){
+    *{
+        font-size: 18px;
+    }
+    section{
+        width: 90%;
+    }
+    nav:first-child{
+        display: contents;
+    }
+
+    nav:first-child article p{
+        padding: 10px 0;
+    }
+
+    nav:last-child{
+        height: 50vh;
+    }
+    nav:last-child p{
+        font-size: 17px;
+    }
+
+    nav:last-child div{
+        margin: 10px 15px;
+    }
+
+    nav:first-child article:nth-child(1){
+        width: 100%;
+    }
+
+    nav:first-child article:nth-child(1) p {
+        height: auto;
+    }
+
+    nav:first-child article:nth-child(1) p{
+        padding: 10px 0 10px 0;
+    }
+    
+    nav:first-child article:nth-child(2) {
+        width: auto;
+        border-right: 1px solid #a1a1a1;
+        border-left: 1px solid #a1a1a1;
+    }
+    
+    nav:first-child article:nth-child(3){
+        width: auto;
+    }
+}
