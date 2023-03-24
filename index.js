@@ -1,7 +1,7 @@
 let tbody = document.querySelector('tbody')
 
 
-fetch('./repo/BugDict.json')
+fetch('repo/BugDict.json')
     .then(obj => {
         return obj.json()
     })
