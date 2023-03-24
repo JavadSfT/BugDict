@@ -1,0 +1,9 @@
+[
+    {
+        "language": "JavaScript",
+        "problem": "Translate data-attr To Persian number & can't use DOM in HTML page",
+        "solution": "We See this Problem just in Chrome, not in opera , fireFox & Edge, We didn't See any Problem.\r\nafter Change region to Iran and use Persian font 'vazir', data-attr in HTML Page Tarnslate to Persian numbar, this is very bad Problem, in this State we can't use DOM, Lisiner & etc ... in JavaScript.\r\nwe had to Write onload function after load HTML page and before load JavaScript code, then select all of data-attr & Elements with Problems and Convert persian numbers to english number with regexp.",
+        "type": 1,
+        "date": "2023-03-24"
+    }
+]
