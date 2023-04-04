@@ -3,10 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     box-shadow: none;
-    text-align: center;
+    
     font-size: 20px;
     border-radius: 10px;
 }
+#bugType , #date,#bugProblem,#bugLanguage{
+    text-align: center;
+}
+
 
 body {
     height: 98vh;

@@ -21,15 +21,16 @@ app.post("/", function (req, res) {
     let ty = req.body.type
     let dt = req.body.date
 
-    console.log(ty, dt);
+    // console.log(ty);
+    // console.log(dt)
     db.run(`INSERT INTO bugs(language , problem , solution , type , date) VALUES("${lang}","${prob}","${sol}","${ty}","${dt}")`)
 
-    let query = "SELECT * FROM bugs"
+    let query = "SELECT * FROM Bugs"
 
 
     db.all(query, [], (err, row) => {
         const data = []
-        if (err) throw err
+        //if (err) throw err
 
         row.forEach(row => {
 
@@ -43,8 +44,9 @@ app.post("/", function (req, res) {
 
             data.push(Object(items))
 
+            console.log(data);
             fs.writeFile("BugDict.json", JSON.stringify(data), (err) => {
-                if (err) throw err
+                //if (err) throw err
                 // console.log("save");
             })
         })
